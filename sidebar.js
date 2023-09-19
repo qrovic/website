@@ -17,9 +17,8 @@ function checkOverflow() {
     });
 }
 
-function openSidebar() {
-    sidebar.classList.toggle("close");
-    sidebar.classList.remove("toggle");
+function closeSidebar() {
+    sidebar.classList.add("close");
 }
 
 function disableOpenSidebar() {
@@ -31,8 +30,8 @@ const isMobile = window.innerWidth < 768;
 
 // Disable opening the sidebar on mobile devices
 if (isMobile) {
-    enableOpenSidebar();
-
+    closeSidebar(); // Close the sidebar on mobile devices
+    disableOpenSidebar(); // Hide the toggle button on mobile devices
 } else {
     // Enable opening the sidebar when not on a mobile device
     toggle.addEventListener("click", toggleSidebar); // Call toggleSidebar when the button is clicked
