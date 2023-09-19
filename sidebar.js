@@ -17,21 +17,13 @@ function checkOverflow() {
     });
 }
 
-function closeSidebar() {
-    sidebar.classList.add("close");
-}
-
-function disableOpenSidebar() {
-    toggle.style.display = "none"; // Hide the toggle button
-}
-
 // Detect if the device width is less than a certain breakpoint (e.g., 768px)
 const isMobile = window.innerWidth < 768;
 
 // Disable opening the sidebar on mobile devices
 if (isMobile) {
-    closeSidebar(); // Close the sidebar on mobile devices
-    disableOpenSidebar(); // Hide the toggle button on mobile devices
+    sidebar.classList.add("close");
+    toggle.style.display = "none"; // Hide the toggle button on mobile devices
 } else {
     // Enable opening the sidebar when not on a mobile device
     toggle.addEventListener("click", toggleSidebar); // Call toggleSidebar when the button is clicked
