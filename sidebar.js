@@ -18,7 +18,8 @@ function checkOverflow() {
 }
 
 function openSidebar() {
-    sidebar.classList.add("close"); // Remove the "close" class to open the sidebar
+    sidebar.classList.toggle("close");
+    sidebar.classList.remove("toggle");
 }
 
 function disableOpenSidebar() {
