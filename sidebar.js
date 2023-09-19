@@ -19,7 +19,12 @@ function checkOverflow() {
 
 // Detect if the device width is less than a certain breakpoint (e.g., 768px)
 const isMobile = window.innerWidth < 768;
-
+function updateWidthDisplay() {
+    const windowWidth = window.innerWidth;
+    widthDisplay.textContent = `Inner Width: ${windowWidth}px`;
+}
+window.addEventListener("resize", updateWidthDisplay);
+        updateWidthDisplay();
 // Disable opening the sidebar on mobile devices
 if (isMobile) {
     sidebar.classList.add("close");
