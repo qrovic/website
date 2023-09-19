@@ -31,7 +31,7 @@ if (isMobile) {
     toggle.style.display = "none"; // Hide the toggle button on mobile devices
 } else {
     // Enable opening the sidebar when not on a mobile device
-    toggle.addEventListener("click","touch", toggleSidebar); // Call toggleSidebar when the button is clicked
+    toggle.addEventListener("click", toggleSidebar); // Call toggleSidebar when the button is clicked
 }
 
 // Check for overflow initially and on window resize
