@@ -92,7 +92,7 @@ li a{
 i{
     display: flex;
     justify-content: center;
-    margin: 0px 5px;
+    margin: 0px 0px;
 }
 
 .sidebar{
@@ -134,7 +134,7 @@ i{
 .sidebar-ul{
     list-style-type: none;
     padding: 0px 0px;
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 .logout{
     display: flex;
