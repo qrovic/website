@@ -18,7 +18,7 @@ const body = document.querySelector("body");
         }
 
         function openSidebar() {
-            sidebar.classList.remove("close"); // Remove the "closed" class to open the sidebar
+            sidebar.classList.add("close"); // Remove the "closed" class to open the sidebar
         }
 
         function disableOpenSidebar() {
