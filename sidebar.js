@@ -12,7 +12,7 @@ const body = document.querySelector("body");
             listItems.forEach((item) => {
                 // Check if the text content overflows the container
                 if (item.scrollWidth > item.clientWidth) {
-                    sidebar.classList.add("close"); // Close the sidebar
+                    sidebar.classList.toggle("close"); // Close the sidebar
                 }
             });
         }
