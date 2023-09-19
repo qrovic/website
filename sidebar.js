@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const sidebar = body.querySelector(".sidebar");
 const toggle = body.querySelector(".toggle");
-const listItems = sidebar.querySelectorAll("ul"); // Select all <li> elements within the sidebar
+const listItems = sidebar.querySelectorAll("li"); // Select all <li> elements within the sidebar
 
 function toggleSidebar() {
     sidebar.classList.toggle("close");
@@ -17,15 +17,7 @@ function checkOverflow() {
     });
 }
 
-// Detect if the device width is less than a certain breakpoint (e.g., 768px)
-const isMobile = window.innerWidth < 768;
-function updateWidthDisplay() {
-    const windowWidth = window.innerWidth;
-    widthDisplay.textContent = `Inner Width: ${windowWidth}px`;
-}
-window.addEventListener("resize", updateWidthDisplay);
-        updateWidthDisplay();
-// Disable opening the sidebar on mobile devices
+
 if (isMobile) {
     sidebar.classList.add("close");
     toggle.style.display = "none"; // Hide the toggle button on mobile devices
